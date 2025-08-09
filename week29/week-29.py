@@ -54,7 +54,7 @@ def load_data(path="station_coords.csv"):
     return df
 import pandas as pd
 
-url = "https://github.com/reinakv/Tidy-Tuesday/blob/main/week29/station_coords.csv"
+url = "week29/station_coords.csv"
 df = pd.read_csv(url)
 
 
