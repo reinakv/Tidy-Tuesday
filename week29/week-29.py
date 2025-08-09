@@ -52,10 +52,8 @@ def load_data(path="station_coords.csv"):
         df["year"] = pd.NA
     df = df.dropna(subset=["latitude", "longitude"]).reset_index(drop=True)
     return df
-import pandas as pd
 
-url = "week29/station_coords.csv"
-df = pd.read_csv(url)
+df = load_data(path="week29/station_coords.csv")
 
 
 # --------------------------------------------------------------------------------------------
