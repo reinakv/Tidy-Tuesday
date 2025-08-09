@@ -52,8 +52,11 @@ def load_data(path="station_coords.csv"):
         df["year"] = pd.NA
     df = df.dropna(subset=["latitude", "longitude"]).reset_index(drop=True)
     return df
+import pandas as pd
 
-df = load_data("station_coords.csv")
+url = "https://github.com/reinakv/Tidy-Tuesday/blob/main/week29/station_coords.csv"
+df = pd.read_csv(url)
+
 
 # --------------------------------------------------------------------------------------------
 # Sidebar filters
