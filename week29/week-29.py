@@ -9,7 +9,7 @@ import plotly.express as px
 # --------------------------------------------------------------------------------------------
 # Page config + styles
 # --------------------------------------------------------------------------------------------
-st.set_page_config(page_title="Marvelpious | MTA Art Map", page_icon="🗽", layout="wide")
+st.set_page_config(page_title="MTA Art Map", page_icon="🗽", layout="wide")
 st.markdown(
     """
     <style>
